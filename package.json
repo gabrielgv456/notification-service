@@ -1,0 +1,26 @@
+{
+  "name": "edmil-notification-service",
+  "version": "1.0.0",
+  "main": "/src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch src --exec ts-node -r tsconfig-paths/register src/server.ts",
+    "build": "tsc",
+    "start": "node -r module-alias/register dist/server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sns": "^3.782.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.3",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.14.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3"
+  }
+}

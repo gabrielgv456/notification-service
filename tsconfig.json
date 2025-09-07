@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "ES6",
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@entities/*": [
+                "domain/entities/*"
+            ],
+            "@repositories/*": [
+                "domain/repositories/*"
+            ],
+            "@useCases/*": [
+                "application/useCases/*"
+            ],
+            "@infrastructure/*": [
+                "infrastructure/*"
+            ],
+            "@controllers/*": [
+                "interface/controllers/*"
+            ],
+            "@shared/*": [
+                "shared/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
